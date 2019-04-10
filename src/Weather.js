@@ -1,10 +1,11 @@
 import React from 'react'
+import ErrorMessage from './ErrorMessage'
 
 function Weather(props) {
     // This method returns undefined or a JSX component
     if (props.weatherData === null) {
         // If there is no data return undefined
-        return <div>no data</div>
+        return <ErrorMessage message="No Weather Data"/>
     }
     /* 
     This next step needs another level of error checking. It's 
