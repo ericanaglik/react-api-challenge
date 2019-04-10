@@ -86,7 +86,7 @@ class App extends Component {
         </form>
 
         {/** Conditionally render this component */}
-        { Weather }
+        <Weather weatherData={this.state.weatherData}/>
 
       </div>
     );
